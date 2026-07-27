@@ -1,29 +1,322 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Facilita ERP</title>
-<link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Facilita ERP: gestão financeira, estoque, vendas e emissão fiscal em um só sistema. Teste grátis por 10 dias.">
+  <title>Facilita ERP | Gestão simples para sua empresa crescer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<header class="hero">
-<div class="container">
-<h1>Facilita ERP</h1>
-<p>Gestão completa para sua empresa crescer.</p>
-<a class="btn" href="#">Teste Grátis</a>
-</div>
-</header>
+  <header class="topo" id="inicio">
+    <div class="container nav">
+      <a class="marca" href="#inicio" aria-label="Facilita ERP">
+        <span class="marca-simbolo">F</span>
+        <span>Facilita <strong>ERP</strong></span>
+      </a>
 
-<section class="container">
-<h2>Controle tudo em um só lugar</h2>
-<div class="cards">
-<div class="card"><h3>Financeiro</h3><p>Fluxo de caixa, contas e relatórios.</p></div>
-<div class="card"><h3>Estoque</h3><p>Entradas, saídas e inventário.</p></div>
-<div class="card"><h3>Vendas</h3><p>PDV, pedidos e clientes.</p></div>
-</div>
-</section>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
 
-<script src="script.js"></script>
+      <nav class="menu" id="menu">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#planos">Planos</a>
+        <a href="#faq">Dúvidas</a>
+        <a class="btn btn-menu" href="#contato">Teste grátis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <span class="selo">10 dias grátis • sem cartão</span>
+          <h1>Sua empresa organizada. Seu crescimento <span>facilitado.</span></h1>
+          <p>Controle vendas, estoque, financeiro, clientes e resultados em um único sistema, simples de usar e acessível de qualquer lugar.</p>
+
+          <div class="hero-acoes">
+            <a class="btn btn-dourado" href="#contato">Começar teste grátis</a>
+            <a class="btn btn-claro" href="#recursos">Conhecer o sistema</a>
+          </div>
+
+          <div class="hero-checks">
+            <span>✓ Suporte gratuito</span>
+            <span>✓ Dados seguros na nuvem</span>
+            <span>✓ Acesso no celular, tablet e computador</span>
+          </div>
+        </div>
+
+        <div class="painel-demo" aria-label="Demonstração visual do sistema">
+          <div class="painel-topo">
+            <span></span><span></span><span></span>
+            <strong>Visão geral da empresa</strong>
+          </div>
+          <div class="metricas">
+            <article>
+              <small>Vendas do mês</small>
+              <strong>R$ 48.720</strong>
+              <em>↑ 18,4%</em>
+            </article>
+            <article>
+              <small>Contas a receber</small>
+              <strong>R$ 21.560</strong>
+              <em>Em dia</em>
+            </article>
+            <article>
+              <small>Produtos em estoque</small>
+              <strong>1.284</strong>
+              <em>Atualizado</em>
+            </article>
+          </div>
+          <div class="grafico">
+            <div style="height:38%"></div>
+            <div style="height:55%"></div>
+            <div style="height:46%"></div>
+            <div style="height:72%"></div>
+            <div style="height:62%"></div>
+            <div style="height:88%"></div>
+            <div style="height:78%"></div>
+          </div>
+          <div class="painel-rodape">
+            <span><i></i> Vendas</span>
+            <span>Relatório atualizado agora</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa">
+      <div class="container faixa-grid">
+        <div><strong>100% online</strong><span>Acesse de qualquer lugar</span></div>
+        <div><strong>Armazenamento ilimitado</strong><span>Mais liberdade para crescer</span></div>
+        <div><strong>Preço garantido</strong><span>Previsibilidade para sua empresa</span></div>
+        <div><strong>Suporte gratuito</strong><span>Ajuda quando você precisar</span></div>
+      </div>
+    </section>
+
+    <section class="secao" id="beneficios">
+      <div class="container">
+        <div class="titulo-secao">
+          <span>Gestão sem complicação</span>
+          <h2>Tudo o que sua empresa precisa para vender mais e controlar melhor</h2>
+          <p>Menos planilhas, menos retrabalho e mais clareza para tomar decisões.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icone">R$</div>
+            <h3>Financeiro completo</h3>
+            <p>Fluxo de caixa, contas a pagar e receber, conciliação e relatórios para acompanhar cada movimento.</p>
+          </article>
+          <article class="card">
+            <div class="icone">▦</div>
+            <h3>Estoque sob controle</h3>
+            <p>Entradas, saídas, inventário, alertas e movimentações para evitar perdas e falta de produtos.</p>
+          </article>
+          <article class="card">
+            <div class="icone">↗</div>
+            <h3>Vendas organizadas</h3>
+            <p>Pedidos, orçamentos, clientes e acompanhamento comercial em um processo simples e rápido.</p>
+          </article>
+          <article class="card">
+            <div class="icone">☁</div>
+            <h3>Segurança na nuvem</h3>
+            <p>Seus dados protegidos e disponíveis com acesso por celular, tablet ou computador.</p>
+          </article>
+          <article class="card">
+            <div class="icone">∞</div>
+            <h3>Acessos sem restrições</h3>
+            <p>Sua equipe trabalhando ao mesmo tempo, com organização e informações centralizadas.</p>
+          </article>
+          <article class="card">
+            <div class="icone">✓</div>
+            <h3>Suporte de verdade</h3>
+            <p>Atendimento para ajudar sua empresa a aproveitar melhor cada recurso do Facilita ERP.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-verde" id="recursos">
+      <div class="container recursos-grid">
+        <div>
+          <span class="mini-titulo">Visão completa do negócio</span>
+          <h2>Informações claras para decisões mais rápidas</h2>
+          <p class="texto-claro">Acompanhe os indicadores mais importantes em painéis simples, sem depender de várias planilhas ou sistemas separados.</p>
+          <ul class="lista">
+            <li>Dashboard com visão financeira e comercial</li>
+            <li>Relatórios para acompanhar resultados</li>
+            <li>Cadastro e histórico de clientes</li>
+            <li>Controle de produtos e movimentações</li>
+            <li>Acesso simultâneo pela sua equipe</li>
+          </ul>
+          <a class="btn btn-dourado" href="#contato">Quero conhecer o Facilita ERP</a>
+        </div>
+
+        <div class="relatorio">
+          <div class="relatorio-cabecalho">
+            <strong>Desempenho mensal</strong>
+            <span>Últimos 6 meses</span>
+          </div>
+          <div class="linha-relatorio">
+            <span>Faturamento</span><strong>R$ 48.720</strong>
+          </div>
+          <div class="barra"><i style="width:88%"></i></div>
+          <div class="linha-relatorio">
+            <span>Recebimentos</span><strong>R$ 41.380</strong>
+          </div>
+          <div class="barra"><i style="width:74%"></i></div>
+          <div class="linha-relatorio">
+            <span>Despesas</span><strong>R$ 19.240</strong>
+          </div>
+          <div class="barra"><i style="width:42%"></i></div>
+          <div class="saldo">
+            <span>Saldo projetado</span>
+            <strong>R$ 22.140</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="planos">
+      <div class="container">
+        <div class="titulo-secao">
+          <span>Plano simples e transparente</span>
+          <h2>Comece sem risco e veja o resultado na prática</h2>
+        </div>
+
+        <div class="plano">
+          <div>
+            <span class="selo-plano">Melhor custo-benefício</span>
+            <h3>Facilita ERP</h3>
+            <p>Gestão completa para pequenas e médias empresas.</p>
+          </div>
+          <div class="preco">
+            <small>A partir de</small>
+            <strong><sup>R$</sup>119<small>/mês</small></strong>
+            <span>no plano anual</span>
+          </div>
+          <ul>
+            <li>✓ 10 dias de teste grátis</li>
+            <li>✓ Sem cartão de crédito</li>
+            <li>✓ Suporte técnico gratuito</li>
+            <li>✓ Armazenamento ilimitado</li>
+            <li>✓ Acesso simultâneo</li>
+            <li>✓ Dados seguros na nuvem</li>
+          </ul>
+          <a class="btn btn-dourado" href="#contato">Testar grátis agora</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-cinza">
+      <div class="container depoimentos">
+        <div class="titulo-secao">
+          <span>Feito para quem empreende</span>
+          <h2>Mais organização para cuidar do que realmente importa</h2>
+        </div>
+        <div class="depo-grid">
+          <blockquote>
+            “Agora conseguimos enxergar o financeiro e o estoque sem perder tempo procurando informação.”
+            <footer>Cliente Facilita ERP</footer>
+          </blockquote>
+          <blockquote>
+            “O sistema deixou nossa rotina mais simples e trouxe mais segurança para as decisões.”
+            <footer>Cliente Facilita ERP</footer>
+          </blockquote>
+          <blockquote>
+            “Ter tudo em um só lugar facilitou o trabalho da equipe e melhorou o atendimento.”
+            <footer>Cliente Facilita ERP</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="faq">
+      <div class="container faq-grid">
+        <div>
+          <span class="mini-titulo escuro">Perguntas frequentes</span>
+          <h2>Tire suas dúvidas antes de começar</h2>
+          <p>O teste é gratuito e você pode conhecer o sistema sem informar cartão.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Preciso instalar algum programa?</summary>
+            <p>Não. O Facilita ERP é 100% online e pode ser acessado pelo navegador.</p>
+          </details>
+          <details>
+            <summary>Posso acessar pelo celular?</summary>
+            <p>Sim. O sistema pode ser acessado pelo celular, tablet ou computador.</p>
+          </details>
+          <details>
+            <summary>O teste grátis exige cartão?</summary>
+            <p>Não. Você pode testar por 10 dias sem cadastrar cartão de crédito.</p>
+          </details>
+          <details>
+            <summary>Minha equipe pode acessar ao mesmo tempo?</summary>
+            <p>Sim. O sistema permite acessos simultâneos conforme a configuração da empresa.</p>
+          </details>
+          <details>
+            <summary>Existe suporte técnico?</summary>
+            <p>Sim. O suporte técnico está incluído para ajudar na utilização do sistema.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contato">
+      <div class="container cta-grid">
+        <div>
+          <span>Pronto para facilitar sua gestão?</span>
+          <h2>Teste o Facilita ERP gratuitamente por 10 dias</h2>
+          <p>Preencha seus dados e dê o primeiro passo para organizar sua empresa.</p>
+        </div>
+
+        <form class="formulario" id="formulario">
+          <label>
+            Nome
+            <input type="text" name="nome" placeholder="Seu nome" required>
+          </label>
+          <label>
+            WhatsApp
+            <input type="tel" name="whatsapp" placeholder="(00) 00000-0000" required>
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" placeholder="voce@empresa.com.br" required>
+          </label>
+          <label>
+            Sua empresa já possui CNPJ?
+            <select name="cnpj" required>
+              <option value="">Selecione</option>
+              <option>Sim</option>
+              <option>Não</option>
+            </select>
+          </label>
+          <button class="btn btn-dourado" type="submit">Solicitar teste grátis</button>
+          <small>Ao enviar, você concorda em receber contato da equipe Facilita ERP.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-grid">
+      <a class="marca marca-rodape" href="#inicio">
+        <span class="marca-simbolo">F</span>
+        <span>Facilita <strong>ERP</strong></span>
+      </a>
+      <p>Gestão simples, segura e completa para sua empresa crescer.</p>
+      <span>© <span id="ano"></span> Facilita ERP. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <a class="whatsapp" href="#contato" aria-label="Falar com o Facilita ERP">WhatsApp</a>
+
+  <script src="script.js"></script>
 </body>
 </html>
