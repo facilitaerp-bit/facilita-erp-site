@@ -1,0 +1,1 @@
+document.querySelectorAll('button').forEach(b=>b.onclick=()=>alert('Integrar ao formulário de teste grátis.'));
